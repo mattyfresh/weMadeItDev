@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Silence';
+  src: url("../fonts/BreakTheSilence.ttf"); }
+@font-face {
+  font-family: 'Scarlett';
+  src: url("../fonts/Alpaca-Scarlett.ttf"); }
+@font-face {
+  font-family: 'Solid';
+  src: url("../fonts/Alpaca-Solidify.ttf"); }
+@font-face {
+  font-family: 'Sanchez';
+  src: url("../fonts/Sanchezregular.otf"); }
+@font-face {
+  font-family: 'Zin';
+  src: url("../fonts/Znikomit.otf"); }
+html {
+  margin: 0; }
+  html body {
+    text-align: center;
+    color: black;
+    background-color: white; }
+    html body #wemadeit {
+      /*position: absolute;*/
+      -webkit-filter: blur(20px);
+      -webkit-animation-delay: .5s;
+      -webkit-animation-duration: 2s;
+      transition: -webkit-filter 1s; }
+      html body #wemadeit h1 {
+        text-align: center;
+        font-family: 'Scarlett', sans-serif;
+        font-size: 8em;
+        margin: 100px; }
+      html body #wemadeit h3 {
+        font-family: 'Zin', serif;
+        margin: 100px; }
+    html body .de-blur {
+      -webkit-filter: blur(0px) !important;
+      text-shadow: rgba(0, 0, 0, 0.3) 10px 10px 4px; }
+    html body #portfolio {
+      background-color: black;
+      min-height: 650px;
+      transition: background-color .5s;
+      -webkit-animation-delay: 1s;
+      -webkit-animation-duration: 2s; }
+      html body #portfolio img:nth-child(1) {
+        -webkit-animation-delay: .5s;
+        -webkit-animation-duration: 2s; }
+      html body #portfolio img:nth-child(2) {
+        -webkit-animation-delay: .75s;
+        -webkit-animation-duration: 2s; }
+      html body #portfolio img:nth-child(3) {
+        -webkit-animation-delay: .1s;
+        -webkit-animation-duration: 2s; }
+      html body #portfolio img:nth-child(4) {
+        -webkit-animation-delay: 1.25s;
+        -webkit-animation-duration: 2s; }
+      html body #portfolio img:nth-child(5) {
+        -webkit-animation-delay: 1.5s;
+        -webkit-animation-duration: 2s; }
+      html body #portfolio img:nth-child(6) {
+        -webkit-animation-delay: 1.75s;
+        -webkit-animation-duration: 2s; }
+      html body #portfolio img {
+        display: none;
+        height: 300px;
+        width: 420px;
+        margin: 10px;
+        border: solid 2px white;
+        -webkit-filter: grayscale(100%);
+        transition: -webkit-filter .5s; }
+        html body #portfolio img:hover {
+          -webkit-filter: grayscale(0%); }
+    html body #about {
+      /*min-height: 500px;*/ }
+      html body #about h1 {
+        opacity: 0;
+        font-family: 'Sanchez', sans-serif;
+        font-size: 4em;
+        width: 80%;
+        margin: 100px auto;
+        text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 4px;
+        -webkit-animation-delay: .5s;
+        -webkit-animation-duration: 3s; }
+    html body #contact {
+      opacity: 1;
+      min-height: 200px;
+      background-color: black;
+      margin-bottom: -20px; }
+      html body #contact h2 {
+        opacity: 0;
+        vertical-align: center;
+        font-family: 'Silence', serif;
+        color: white;
+        padding: 10px;
+        margin: 40px auto;
+        font-size: 3em; }
+      html body #contact p {
+        font-family: 'Sanchez', sans-serif;
+        color: white;
+        margin: 10px 10px 0 10px;
+        padding: 10px; }
+        html body #contact p a {
+          color: white !important; }
+
+@media (max-width: 700px) {
+  html body #wemadeit h1 {
+    font-size: 6em;
+    margin: 60px; }
+  html body #portfolio img {
+    height: 200px !important;
+    width: 260px !important; }
+  html body #about h1 {
+    font-size: 2em; }
+  html body #contact #getInTouch {
+    opacity: 1 !important; } }

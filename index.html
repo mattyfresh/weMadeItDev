@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>We Made It Development</title>
+
+	<!-- CSS -->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/animate.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+
+	<!-- SCRIPTS -->
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/waypoints.js"></script>
+	<script type="text/javascript" src="js/waypoints-sticky.min.js"></script>
+
+
+
+
+</head>
+<body>
+<header>
+	<div id="wemadeit" class="animated fadeIn">
+		<h1>we made it.</h1>
+		<h3>A Matthew Padich and Daniel Tintle Production</h3>
+
+	</div>
+
+</header>
+
+<div id="portfolio" class="">
+
+	<a href="http://josephcappelli.com" target="_blank"><img class="animated fadeInLeft" src="images/joe.png"></a>
+	<a href="http://flyingcolorsmusic.com" target="_blank"><img class="animated fadeInRight" src="images/flyingcolors.png"></a>
+	<a href="http://dantintle.com" target="_blank"><img class="animated fadeInDown" src="images/dantintle.png"></a>
+	<a href="http://wemadeitdev.com/concept" target="_blank"><img class="animated fadeInUp" src="images/jackie.png"></a>
+	<a href="http://chairmix.com" target="_blank"><img class="animated fadeInLeft" src="images/chairmix.png">
+	<a href="http://wemadeitdev.com/fulteam/properties.html" target="_blank"><img class="animated fadeInRight" src="images/properties.png"></a>
+
+
+
+</div>
+<div id="about">
+
+	<h1>"We are all about creating simple, smart, responsive designs.  We build lightweight sites that look great no matter which device you're on.  Great UX is what we make."</h1>
+
+
+
+
+</div>
+<footer>
+	<div id="contact">
+
+		<h2 id="getInTouch">Get in touch with us.</h2>
+		<p>Email:  <a href="mailto:matthewpadich@gmail.com?subject=makeThis!" target="_blank">Matthew Padich</a> or <a href="mailto:danieltintle@gmail.com?subject=makeThis!" target="_blank">Daniel Tintle</a></p>
+
+	</div>
+
+</footer>	
+
+	<script type="text/javascript">
+$(document).ready(function() {
+	
+	$('#wemadeit h3').waypoint(function() {
+		
+		$('#portfolio img').each(function() {
+			
+			$(this).css('display', 'inline-block');
+		});
+
+	});
+
+	$('#portfolio').waypoint(function() {
+
+		$('#about h1').addClass('animated fadeInUp');
+	}, {offset:-200});
+
+
+		$('#about').waypoint(function() {
+
+			$('#contact h2#getInTouch').addClass('animated fadeInLeft');
+		}, {offset: 700});
+
+
+	setTimeout(function() {
+		$('#wemadeit').addClass('de-blur');
+	}, 1000);
+
+
+});
+	
+	</script>
+
+</body>
+</html>
