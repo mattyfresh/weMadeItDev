@@ -19,47 +19,70 @@ html {
     text-align: center;
     color: black;
     background-color: white; }
+    html body .scrolled {
+      text-shadow: rgba(0, 0, 0, 0.3) 10px 10px 4px !important; }
     html body #wemadeit {
       /*position: absolute;*/
       -webkit-filter: blur(20px);
       -webkit-animation-delay: .5s;
       -webkit-animation-duration: 2s;
-      transition: -webkit-filter 1s; }
+      -moz-filter: blur(20px);
+      -moz-animation-delay: .5s;
+      -moz-animation-duration: 2s;
+      text-shadow: rgba(0, 0, 0, 0.3) -10px 10px 20px;
+      transition: -webkit-filter 1s, -moz-filter 1s, text-shadow .5s; }
       html body #wemadeit h1 {
         text-align: center;
         font-family: 'Scarlett', sans-serif;
         font-size: 8em;
-        margin: 100px; }
+        margin: 100px;
+        transition: color 1s; }
       html body #wemadeit h3 {
         font-family: 'Zin', serif;
         margin: 100px; }
     html body .de-blur {
-      -webkit-filter: blur(0px) !important;
-      text-shadow: rgba(0, 0, 0, 0.3) 10px 10px 4px; }
+      -moz-filter: blur(0px) !important;
+      -webkit-filter: blur(0px) !important; }
     html body #portfolio {
       background-color: black;
       min-height: 650px;
+      z-index: 1;
+      position: relative;
       transition: background-color .5s;
       -webkit-animation-delay: 1s;
-      -webkit-animation-duration: 2s; }
+      -webkit-animation-duration: 2s;
+      -moz-animation-delay: 1s;
+      -moz-animation-duration: 2s; }
       html body #portfolio img:nth-child(1) {
         -webkit-animation-delay: .5s;
-        -webkit-animation-duration: 2s; }
+        -webkit-animation-duration: 2s;
+        -moz-animation-delay: .5s;
+        -moz-animation-duration: 2s; }
       html body #portfolio img:nth-child(2) {
         -webkit-animation-delay: .75s;
-        -webkit-animation-duration: 2s; }
+        -webkit-animation-duration: 2s;
+        -moz-animation-delay: .75s;
+        -moz-animation-duration: 2s; }
       html body #portfolio img:nth-child(3) {
         -webkit-animation-delay: .1s;
-        -webkit-animation-duration: 2s; }
+        -webkit-animation-duration: 2s;
+        -moz-animation-delay: .1s;
+        -moz-animation-duration: 2s; }
       html body #portfolio img:nth-child(4) {
         -webkit-animation-delay: 1.25s;
-        -webkit-animation-duration: 2s; }
+        -webkit-animation-duration: 2s;
+        -moz-animation-delay: 1.25s;
+        -moz-animation-duration: 2s; }
       html body #portfolio img:nth-child(5) {
         -webkit-animation-delay: 1.5s;
-        -webkit-animation-duration: 2s; }
+        -webkit-animation-duration: 2s;
+        -moz-animation-delay: 1.5s;
+        -moz-animation-duration: 2s; }
       html body #portfolio img:nth-child(6) {
         -webkit-animation-delay: 1.75s;
-        -webkit-animation-duration: 2s; }
+        -webkit-animation-duration: 2s;
+        -moz-animation-delay: 1.75s;
+        -moz-animation-duration: 2s; }
       html body #portfolio img {
         display: none;
         height: 300px;
@@ -67,9 +90,11 @@ html {
         margin: 10px;
         border: solid 2px white;
         -webkit-filter: grayscale(100%);
-        transition: -webkit-filter .5s; }
+        -moz-filter: grayscale(100%);
+        transition: -webkit-filter .5s, -moz-filter .5s; }
         html body #portfolio img:hover {
-          -webkit-filter: grayscale(0%); }
+          -webkit-filter: grayscale(0%);
+          -moz-filter: grayscale(0%); }
     html body #about {
       /*min-height: 500px;*/ }
       html body #about h1 {
@@ -80,7 +105,9 @@ html {
         margin: 100px auto;
         text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 4px;
         -webkit-animation-delay: .5s;
-        -webkit-animation-duration: 3s; }
+        -webkit-animation-duration: 3s;
+        -moz-animation-delay: .5s;
+        -moz-animation-duration: 3s; }
     html body #contact {
       opacity: 1;
       min-height: 200px;

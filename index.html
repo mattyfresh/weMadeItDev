@@ -7,14 +7,11 @@
 	<link href="css/animate.css" rel="stylesheet" type="text/css">
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
-
 	<!-- SCRIPTS -->
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/waypoints.js"></script>
 	<script type="text/javascript" src="js/waypoints-sticky.min.js"></script>
-
-
 
 
 </head>
@@ -35,7 +32,7 @@
 	<a href="http://dantintle.com" target="_blank"><img class="animated fadeInDown" src="images/dantintle.png"></a>
 	<a href="http://wemadeitdev.com/concept" target="_blank"><img class="animated fadeInUp" src="images/jackie.png"></a>
 	<a href="http://chairmix.com" target="_blank"><img class="animated fadeInLeft" src="images/chairmix.png">
-	<a href="http://wemadeitdev.com/fulteam/properties.html" target="_blank"><img class="animated fadeInRight" src="images/properties.png"></a>
+	<a href="http://wemadeitdev.com/shamans" target="_blank"><img class="animated fadeInRight" src="images/shamans.png"></a>
 
 
 
@@ -60,6 +57,16 @@
 
 	<script type="text/javascript">
 $(document).ready(function() {
+
+	$(window).scroll(function() {
+
+		if($(window).scrollTop() > 20) {
+
+			$('#wemadeit').addClass('scrolled');
+		} else {
+			$('#wemadeit').removeClass('scrolled');
+		}
+	});
 	
 	$('#wemadeit h3').waypoint(function() {
 		
@@ -90,6 +97,8 @@ $(document).ready(function() {
 });
 	
 	</script>
+
+
 
 </body>
 </html>
